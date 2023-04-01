@@ -8,10 +8,7 @@ type Category {
 }
 
 input CreateCategoryInput {
-  """
-  Example field (placeholder)
-  """
-  exampleField: Int!
+  title: String!
 }
 
 type Mutation {
@@ -25,9 +22,6 @@ type Query {
 }
 
 input UpdateCategoryInput {
-  """
-  Example field (placeholder)
-  """
-  exampleField: Int
   id: Int!
+  title: String!
 }
