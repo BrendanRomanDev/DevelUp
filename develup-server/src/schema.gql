@@ -18,6 +18,7 @@ type Mutation {
 }
 
 type Query {
+  categories: [Category!]!
   category(id: Int!): Category!
 }
 

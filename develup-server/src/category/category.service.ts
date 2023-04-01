@@ -7,7 +7,7 @@ import { UpdateCategoryInput } from './dto/update-category.input';
 export class CategoryService {
   constructor(private prisma: PrismaService) {}
 
-  async create(createCategoryInput: CreateCategoryInput) {
+  create(createCategoryInput: CreateCategoryInput) {
     return this.prisma.category.create({
       data: { title: createCategoryInput.title },
     });
